@@ -1,0 +1,75 @@
+body 
+{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white; /* Dark background from your screenshot */
+}
+
+/* The Main Navigation Container */
+nav {
+    display: flex; /* This puts left, center, and right sections in a row */
+    justify-content: space-between; /* Pushes the 3 sections apart */
+    align-items: center; /* Vertically centers everything */
+    background-color: #4a4a4a; /* Dark gray nav background */
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Grouping Containers (Left, Center, Right) */
+.nav-left, .nav-center, .nav-right {
+    display: flex; /* Aligns the items inside each group in a row */
+    align-items: center;
+    gap: 12px; /* Adds space between the icons and pills */
+}
+
+/* Basic styling for the circular placeholder icons */
+.icon-circle, .icon-circle-x, .icon-circle-x-small {
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 50%; /* Makes it a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Specific sizing for the circles */
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.icon-circle-x {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-circle-x-small {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styling for the pill-shaped badges */
+.badge-pill {
+    background-color: #b0a3a3; /* Dusty rose/gray color from wireframe */
+    padding: 6px 16px;
+    border-radius: 20px; /* Gives it the rounded pill shape */
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
