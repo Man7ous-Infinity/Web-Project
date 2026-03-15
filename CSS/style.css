@@ -11,7 +11,7 @@ nav {
     justify-content: space-between; /* Pushes the 3 sections apart */
     align-items: center; /* Vertically centers everything */
     background-color: #4a4a4a; /* Dark gray nav background */
-    padding: 10px 20px;
+    padding: 10px 20px; 
     color: white;
 }
 
@@ -21,6 +21,7 @@ nav {
     align-items: center;
     gap: 12px; /* Adds space between the icons and pills */
 }
+
 
 /* Basic styling for the circular placeholder icons */
 .icon-circle, .icon-circle-x, .icon-circle-x-small {
@@ -72,4 +73,22 @@ nav {
     cursor: pointer;
     padding: 0;
     margin-left: 10px;
+}
+
+/*the footer container*/
+footer {
+    display: flex; /*sort the buttons accordingally*/
+    background-color: #4a4a4a; /*dark gray footer*/
+    padding: 10px; /*padding for the footer bg*/
+    position: fixed; /*fix the position*/
+    bottom: 0px; /*make the footer on the bottom*/
+    width: 10000px; /*extend the width of the footer*/
+}
+
+/*footer buttons*/
+.footer {
+    color: white; /*make text white*/
+    background-color: transparent;/*make the bg white to be able to be transparent*/
+    border: white;/*make it transparent*/
+    bottom: 0px; /*make the buttons on the bottom of the page*/
 }
