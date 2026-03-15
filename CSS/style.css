@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     font-family: sans-serif;
-    background-color: white; /* Dark background from your screenshot */
+    background-color: white;
 }
 
 /* The Main Navigation Container */
@@ -10,7 +10,7 @@ nav {
     display: flex; /* This puts left, center, and right sections in a row */
     justify-content: space-between; /* Pushes the 3 sections apart */
     align-items: center; /* Vertically centers everything */
-    background-color: #4a4a4a; /* Dark gray nav background */
+    background-color: #4a4a4a;
     padding: 10px 20px; 
     color: white;
 }
@@ -19,7 +19,7 @@ nav {
 .nav-left, .nav-center, .nav-right {
     display: flex; /* Aligns the items inside each group in a row */
     align-items: center;
-    gap: 12px; /* Adds space between the icons and pills */
+    gap: 12px;
 }
 
 
@@ -27,7 +27,7 @@ nav {
 .icon-circle, .icon-circle-x, .icon-circle-x-small {
     background-color: #e0e0e0;
     color: #333;
-    border-radius: 50%; /* Makes it a perfect circle */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +56,9 @@ nav {
 
 /* Styling for the pill-shaped badges */
 .badge-pill {
-    background-color: #b0a3a3; /* Dusty rose/gray color from wireframe */
+    background-color: #b0a3a3;
     padding: 6px 16px;
-    border-radius: 20px; /* Gives it the rounded pill shape */
+    border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
     color: #fff;
@@ -77,18 +77,18 @@ nav {
 
 /*the footer container*/
 footer {
-    display: flex; /*sort the buttons accordingally*/
-    background-color: #4a4a4a; /*dark gray footer*/
-    padding: 10px; /*padding for the footer bg*/
-    position: fixed; /*fix the position*/
-    bottom: 0px; /*make the footer on the bottom*/
-    width: 10000px; /*extend the width of the footer*/
+    display: flex;
+    background-color: #4a4a4a;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 10000px;
 }
 
 /*footer buttons*/
 .footer {
-    color: white; /*make text white*/
-    background-color: transparent;/*make the bg white to be able to be transparent*/
-    border: white;/*make it transparent*/
-    bottom: 0px; /*make the buttons on the bottom of the page*/
+    color: white;
+    background-color: transparent;
+    border: white;
+    bottom: 0px;
 }
