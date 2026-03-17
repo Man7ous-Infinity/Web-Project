@@ -268,9 +268,8 @@ nav {
 
 
 /*---------------------------FOOTER------------------------------------*/
-/*the footer container*/
+
 footer {
-    display: flex;
     background-color: #212582;
     padding: 10px;
     bottom: 0px;
@@ -278,6 +277,11 @@ footer {
     box-sizing: border-box;
 }
 
+.footer-buttons-container{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+}
 .footer-buttons{
     color: white;
     background-color: transparent;
@@ -286,6 +290,8 @@ footer {
     cursor: pointer;
 }
 /*---------------------------/FOOTER------------------------------------*/
+
+
 
 /*---------------------------FAQ-----------------------------------*/
 /*name of the page*/
@@ -315,3 +321,4 @@ footer {
     color: #EBEBFA;
     margin-left: 25px;
 }
+/*--------------------------- /FAQ -----------------------------------*/
