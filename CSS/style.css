@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     font-family: sans-serif;
-    background-color: white;
+    background-color: rgb(10, 11, 39);
 }
 
 
@@ -47,8 +47,8 @@ nav {
 }
 
 .logo img {
-  height: 60px; /* Adjust this number to make the logo bigger or smaller */
-  width: auto;  /* Keeps the logo's proportions perfect so it doesn't squish */
+  height: 60px; 
+  width: auto;
   display: block;
 }
 
@@ -65,27 +65,62 @@ nav {
 /*---------------------------/NAV BAR------------------------------------*/
 
 
-/*---------------------------FOOTER------------------------------------*/
-/*the footer container*/
-footer {
-    display: flex;
-    background-color: #00283a;
-    padding: 10px;
-    position: fixed;
-    bottom: 0px;
-    width: 10000px;
+/*---------------------------SEARCH BAR------------------------------------*/
+
+.search-wrapper {
+  max-width: 1000Px; 
+  margin: 40px auto;
 }
 
-/*footer buttons
-.footer {
-    color: white;
-    background-color: transparent;
-    border: white;
-    bottom: 0px;
-}*/
 
-/*---------------------------/FOOTER------------------------------------*/
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
 
+
+.search-container:focus-within {
+  border-color: #003b5c;
+  box-shadow: 0 0 5px rgba(0, 59, 92, 0.3);
+}
+
+/* 3. The Text Input */
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #333;
+  width: 220px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+
+.search-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.search-btn:hover {
+  color: #003b5c;
+}
+/*---------------------------/SEARCH BAR------------------------------------*/
 
 
 /*---------------------------IMAGE SLIDER------------------------------------*/
@@ -95,7 +130,7 @@ footer {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 60px;
     overflow: hidden; /* This is the magic that hides the other pictures */
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
@@ -115,13 +150,6 @@ footer {
     background-color: #2a475e;
     color: white;
     text-align: center;
-    /* Just some styling for the placeholder text */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 525px;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 /* If you put actual images inside the .slide divs later, use this: */
@@ -155,3 +183,24 @@ footer {
 .next-btn { right: 0; }
 
 /*---------------------------/NAV BAR------------------------------------*/
+
+
+/*---------------------------FOOTER------------------------------------*/
+/*the footer container*/
+footer {
+    display: flex;
+    background-color: #00283a;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-buttons{
+    color: white;
+    background-color: transparent;
+    border: white;
+    bottom: 0px;
+    cursor: pointer;
+}
+/*---------------------------/FOOTER------------------------------------*/
