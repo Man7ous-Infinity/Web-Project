@@ -1,5 +1,8 @@
 body 
 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: sans-serif;
     background-color: rgb(10, 11, 39);
@@ -184,6 +187,9 @@ nav {
 
 /*---------------------------/NAV BAR------------------------------------*/
 
+.content-area {
+  flex: 1; /* This acts like a giant spring, pushing the footer down! */
+}
 
 /*---------------------------FOOTER------------------------------------*/
 /*the footer container*/
@@ -194,6 +200,7 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-buttons{
