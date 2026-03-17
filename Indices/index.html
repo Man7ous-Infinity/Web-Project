@@ -64,57 +64,79 @@
         </nav>
         <!--**************************************** /NAV BAR ********************************************-->
 
+        <main class="content-area">
 
-        <!--**************************************** SEARCH BAR ********************************************-->
+            <!--**************************************** SEARCH BAR ********************************************-->
 
-        <div class="search-wrapper">
-            <div class="search-container">
+            <div class="search-wrapper">
+                <div class="search-container">
 
-                <input type="text" class="search-input" placeholder="Search games...">
+                    <input type="text" class="search-input" placeholder="Search games...">
 
-                <button class="search-btn">
+                    <button class="search-btn">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div>
-        <!--**************************************** /SEARCH BAR ********************************************-->
+            <!--**************************************** /SEARCH BAR ********************************************-->
+            
+            
+            <!--**************************************** IMAGE SLIDER ********************************************-->
+            <div class="slider-container">
+        
+                <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+
+                <div class="slider-track" id="sliderTrack">
+
+                <div class="slide">
+                    <img src = "../Images/GRIDBanner.jpg">
+                </div>
+
+                <div class="slide">
+                    <img src = "../Images/TOBanner.jpg">
+                </div>
+                <div class="slide">
+                    <img src = "../Images/SOSCBanner-1.jpg">
+                </div>
+
+                </div>
+
+                <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+            </div>
+            <!--**************************************** /IMAGE SLIDER ********************************************-->
+            
+            <div class = "recommend-title">Recommended: </div>
+            <div class = "recommended">
+                <div class = "recommended-game"><button><img src = "https://images.gog.com/f67dd7aba4b28da190c5f25e56bdaba41b6bb1a46fed49258e0199b365fa7ae3_glx_vertical_cover.webp?namespace=gamesdb"></button></div>
+                <div class = "recommended-game"><button><img src = "https://images.gog.com/f67dd7aba4b28da190c5f25e56bdaba41b6bb1a46fed49258e0199b365fa7ae3_glx_vertical_cover.webp?namespace=gamesdb"></button></div>
+                <div class = "recommended-game"><button><img src = "https://images.gog.com/f67dd7aba4b28da190c5f25e56bdaba41b6bb1a46fed49258e0199b365fa7ae3_glx_vertical_cover.webp?namespace=gamesdb"></button></div>
+                <div class = "recommended-game"><button><img src = "https://images.gog.com/f67dd7aba4b28da190c5f25e56bdaba41b6bb1a46fed49258e0199b365fa7ae3_glx_vertical_cover.webp?namespace=gamesdb"></button></div>
+                <div class = "recommended-game"><button><img src = "https://images.gog.com/f67dd7aba4b28da190c5f25e56bdaba41b6bb1a46fed49258e0199b365fa7ae3_glx_vertical_cover.webp?namespace=gamesdb"></button></div>
+            </div>
 
 
-        <!--**************************************** IMAGE SLIDER ********************************************-->
-        <div class="slider-container">
+            <div class = "discover-title">Discover: </div>
+            <div class = "discover">
+                <div class = "discover-game"></button><img src = "../Images/5297666.jpg"></div>
+                <div class = "discover-game"></button><img src = "../Images/5297666.jpg"></div>
+                <div class = "discover-game"></button><img src = "../Images/5297666.jpg"></div>
+                <div class = "discover-game"></button><img src = "../Images/5297666.jpg"></div>
+                <div class = "discover-game"></button><img src = "../Images/5297666.jpg"></div>
+            </div>
+
+        </main>
+
     
-            <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
-
-            <div class="slider-track" id="sliderTrack">
-
-            <div class="slide">
-                <img src = "../Images/GRIDBanner.jpg">
-            </div>
-
-            <div class="slide">
-                <img src = "../Images/TOBanner.jpg">
-            </div>
-            <div class="slide">
-                <img src = "../Images/SOSCBanner-1.jpg">
-            </div>
-
-            </div>
-
-            <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
-
-        </div>
-        <!--**************************************** /IMAGE SLIDER ********************************************-->
-
-
         <!--**************************************** FOOTER ********************************************-->
         <footer>
 
             <div>
-                
+
               <button class="footer-buttons">About Us</button>
               <button class="footer-buttons">Privacy & Policies</button>
               <button class="footer-buttons">Support</button>
