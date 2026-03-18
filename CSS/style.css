@@ -80,11 +80,13 @@ nav {
 
 
 
-/*################################# MAIN ###############################*/
+/*################################################# MAIN ##################################################*/
 
 .content-area {
   flex: 1;
 }
+
+
 /*---------------------------SEARCH BAR------------------------------------*/
 
 .search-wrapper {
@@ -143,6 +145,7 @@ nav {
 /*---------------------------/SEARCH BAR------------------------------------*/
 
 
+
 /*---------------------------IMAGE SLIDER------------------------------------*/
 /* 1. The main window that hides anything outside of it */
 .slider-container {
@@ -151,7 +154,7 @@ nav {
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 60px;
-    overflow: hidden; /* This is the magic that hides the other pictures */
+    overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
@@ -159,13 +162,13 @@ nav {
 /* 2. The long track holding all the images side-by-side */
 .slider-track {
     display: flex;
-    transition: transform 0.4s ease-in-out; /* Makes the sliding smooth */
+    transition: transform 0.4s ease-in-out;
     width: 100%;
 }
 
 /* 3. The individual slides */
 .slide {
-    min-width: 100%; /* Forces each slide to be exactly as wide as the container */
+    min-width: 100%;
     box-sizing: border-box;
     background-color: #2a475e;
     color: white;
@@ -205,7 +208,7 @@ nav {
 /*---------------------------/IMAGE SLIDER------------------------------------*/
 
 
-/*---------------------------/RECOMMENDED GAMES--------------------------------*/
+/*---------------------------DISCOVER AND RECOMMENDED GAMES--------------------------------*/
 
 .recommended{
     display: flex;
@@ -272,9 +275,9 @@ nav {
     margin: 150px 0 20px 60px
     
 }
-/*---------------------------/RECOMMENDED GAMES--------------------------------*/
+/*---------------------------/DISCOVER AND RECOMMENDED GAMES--------------------------------*/
 
-/*##################################### /MAIN ###############################*/
+/*############################################### /MAIN #######################################################*/
 
 
 
@@ -333,3 +336,38 @@ footer {
     margin-left: 25px;
 }
 /*--------------------------- /FAQ -----------------------------------*/
+
+
+/*------------------------- Drop Down Menu ----------------------------*/
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  background-color: #0b1120;
+  width: 150px;
+  padding: 20px;
+  box-shadow: -5px 5px 15px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  z-index: 999;
+
+  opacity: 0;                    
+  visibility: hidden;            
+  transform: translateY(-20px);  
+  transition: all 0.3s ease;
+}
+
+.drop-menu a {
+  padding: 15px 0;
+  border-bottom: 1px  #1b2838;
+}
+
+
+.drop-menu.active {
+    opacity: 1;                    
+    visibility: visible;           
+    transform: translateY(0); 
+}
+
+/*------------------------ /Drop Down Menu ---------------------------*/
